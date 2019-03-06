@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Design and Typography</title>
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora|Roboto+Mono" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script> <!-- to import Font Awesome library -->
+
+</head>
+
+<body>
+    <!-- website based on the link below, using CSS Grid instead of Bootstrap -->
+    <!-- https://www.skillshare.com/classes/Boost-Personal-Branding-by-Coding-Your-Own-Website-HTML-CSS-Basics/1551945410?via=search-layout-grid -->
+    <nav class="nav-menu" id="nav-menu">
+        <!-- Hide Menu on Scroll -->
+        <!-- https://www.w3schools.com/howto/howto_js_navbar_hide_scroll.asp -->
+        <ul class="nav-menu--list" id="nav-menu--list">
+            <!-- <li>Dave</li> -->
+            <li><a href="#works">Works</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#blogs">Blogs</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <!-- *** SCROLL INDICATOR -->
+        <!-- https://www.w3schools.com/howto/howto_js_scroll_indicator.asp -->
+        <!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_scroll_indicator -->
+        <!-- <div class="progress-bar--container">
+        <div class="progress-bar--wrapper" id="myScrollIndicator"></div>
+    </div> -->
+
+    </nav>
+
+    <header>
+
+        <!-- *** SCROLL INDICATOR -->
+        <!-- https://www.w3schools.com/howto/howto_js_scroll_indicator.asp -->
+        <!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_scroll_indicator -->
+        <div class="progress-bar--container">
+            <div class="progress-bar--wrapper" id="myScrollIndicator"></div>
+        </div>
+
+        <!-- *** GRID *** -->
+        <div class="grid-container-header">
+        <!-- left column -->
+            <div class="grid-container-header__left">
+                <div class="intro">
+                        <h1>hey,</h1>
+                        <p class="intro-paragraph intro-paragraph__left">I'm Dave.</p>
+                        <p class="intro-paragraph intro-paragraph__left">I'm improving my design skills whilst coding.</p>
+                </div>
+                <div class="themes">
+                    <!-- *** CSS Variables Site Theming + Component Variations with CSS Variables *** -->
+
+                    <!-- https://medium.freecodecamp.org/everything-you-need-to-know-about-css-variables-c74d922ea855 -->
+                    <!-- https://codepen.io/DavidAfonso/pen/XGjzeW -->
+                    <!-- https://codepen.io/ohansemmanuel/full/xYKgwE/ -->
+                    <!-- https://codepen.io/ohansemmanuel/full/PQYzvv/ -->
+                    <!-- https://codepen.io/DavidAfonso/pen/rRMdNR -->
+                    <!-- add 3 buttons to change colour scheme here -->
+                    <!-- <div class="themes"> -->
+                    <p class="intro-paragraph intro-paragraph__left">Click the buttons to change theme colours</p>
+                    <button value="dark" class="btn dark">dark</button>
+                    <button value="calm" class="btn calm">calm</button>
+                    <button value="light" class="btn light">light</button>
+                    <!-- <button value="original" class="btn original">original</button> -->
+                </div>
+            </div>
+
+            <!-- right column -->
+            <div class="grid-container-header__right">
+                <div class="img-header">
+                    <img src="img/david_afonso-big_2.jpg" alt="Profile picture of Dave at NDSM in Amsterdam">
+                </div>
+                <!-- <p>Photo by Joel Filipe on Unsplash</p> -->
+                <div class="intro">
+                    <p class="intro-paragraph intro-paragraph__right">
+                        I'm rebuilding a website from Aga Naplocha via Skillshare &middot; using CSS Grid instead of Bootstrap, practicing CSS Variables and the BEM naming methodology.</p>
+                    <p class="intro-paragraph intro-paragraph__right">
+                        <a href="http://www.16060661.webdevmmu.uk/david_afonso_portfolio/index.html" target="_blank">
+                            My portfolio
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <!-- <div class="grid-container-header__bottom">
+                <p>Scroll down and find out more</p>
+            </div> -->
+        </div>
+        <div class="grid-container-header__bottom">
+            <p>Scroll down and find out more</p>
+        </div>
+    </header>
+    <main>
+        <!-- works -->
+        <section>
+
+            <div class="grid-container-works">
+                <!-- heading -->
+                <div class="grid-container-heading__top" id="works">
+                    <h2>Works</h2>
+                </div>
+                <div class="grid-container-works__left">
+
+                    <!-- left -->
+                    <div>
+                        <h3>Single Page Website</h3>
+                        <img src="img/geres_park-large.jpg" alt="Natural Park of Geres, Portugal">
+
+                        <h4>cssreference.io</h4>
+                        <p>Period: June 2018</p>
+                        <a href="#">Visit the website</a>
+                    </div>
+                </div>
+
+                <div class="grid-container-works__right">
+                    <!-- right -->
+                    <div>
+                        <h3>Final Year Project</h3>
+                        <img src="img/festival_dark-small.jpg" alt="The Home Festival">
+
+                        <h4>The Home Festival</h4>
+                        <p>Period: February 2019</p>
+                        <a href="#">Visit the website</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- about -->
+        <section>
+            <div class="grid-container-about">
+                <!-- heading -->
+                <div class="grid-container-heading__top" id="about">
+                    <h2>About</h2>
+                </div>
+
+                <!-- left -->
+                <div class="grid-container-about__left">
+                    <div>
+                        <img src="img/amsterdam_ndsm.jpg" alt="NDSM scenario in Amsterdam, Netherlands">
+                        <img src="img/amsterdam_ndsm.jpg" alt="NDSM scenario in Amsterdam, Netherlands">
+                    </div>
+                </div>
+
+                <div class="grid-container-about__right">
+                    <h3>How I started</h3>
+                    <p class="intro-paragraph">I'm a Web Development student at MMU and this is a website to practice my design
+                        skills whilst coding.</p>
+                    <p>Following instructions from Aga Naplocha via Skillshare applying CSS Grid layout instead of bootstrap
+                        whilst implementing the BEM methodology.</p>
+                    <a href="http://www.16060661.webdevmmu.uk/david_afonso_portfolio/index.html" target="_blank">My
+                        portfolio</a>
+                    <p>What I've been practicing</p>
+                    <ul>
+                        <li>CSS animations</li>
+                        <li>CSS Grid</li>
+                        <li>JavaScript</li>
+                        <li>Sass</li>
+                        <li>UX and Visual Design</li>
+                        <li>Photography</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- contact -->
+        <section>
+            <div class="grid-container-contact">
+                <!-- heading -->
+                <div class="grid-container-heading__top" id="contact">
+                    <h2>Contact</h2>
+                </div>
+
+                <!-- left -->
+                <div class="grid-container-contact__left">
+                    <p>Email: davidmafonso@gmail.com</p>
+                    <p>Based in Manchester, UK</p>
+                </div>
+
+                <!-- right -->
+                <div class="grid-container-contact__right">
+                    <img src="img/amsterdam_ndsm.jpg" alt="Manchester">
+                    <img src="img/amsterdam_ndsm.jpg" alt="Lisbon">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- *** FOOTER *** -->
+    <footer class="footer">
+        <!-- icons from https://fontawesome.com/icons/ -->
+
+        <div class="grid-container-footer">
+            <!-- heading / 1st row / empty -->
+            <div class="grid-container-footer-heading__top">
+                
+            </div>
+            <!-- middle -->
+            <div class="grid-container-footer__icons">
+                <ul class="footer__social-media"> <!-- <ul> acts as a flexbox container for each square list item -->
+                    <li>
+                        <a href="https://twitter.com/dave_mfa" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://codepen.io/DavidAfonso/" target="_blank">
+                        <i class="fab fa-codepen"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/davidmafonso" target="_blank">
+                        <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://uk.linkedin.com/in/david-afonso-33654042" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- bottom -->
+            <div class="grid-container-footer__bottom">
+                <p>Designed by Aga Naplocha,<br>coded by David Afonso</p>
+            </div>
+        </div>
+    </footer>
+    <!-- add JS here -->
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>
+
+
+
+<!-- </p>
+        <h1>Welcome</h1>
+        <p class="intro-paragraph">I'm a Web Development student at MMU and this is a website to practice my design skills whilst coding.</p>
+        <p>Following instructions from Aga Naplocha via Skillshare applying CSS Grid layout instead of bootstrap.</p>
+        <a href="http://www.16060661.webdevmmu.uk/david_afonso_portfolio/index.html" target="_blank">My portfolio</a>
+        <img src="img/skillshare.png" alt="Skillshare's classes thumbnail">
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Web Design</li>
+        </ul> -->
